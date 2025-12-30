@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Chúc Mừng Năm Mới Lê Anh Thư 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Quicksand', sans-serif;
+        background: linear-gradient(135deg, #ffd1dc, #ffe6f0);
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #fff0f6;
+        border-radius: 30px;
+        box-shadow: 0 0 30px rgba(255,105,180,0.4);
+        padding: 40px;
+        text-align: center;
+        position: relative;
+    }
+
+    h1 {
+        font-family: 'Pacifico', cursive;
+        color: #ff4f9a;
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .kitty {
+        width: 150px;
+        margin: 20px auto;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+    }
+
+    .message {
+        background: #ffe1ec;
+        border-radius: 20px;
+        padding: 30px;
+        font-size: 18px;
+        line-height: 1.8;
+        color: #ff4f9a;
+        margin-top: 20px;
+    }
+
+    .heart {
+        position: fixed;
+        top: -20px;
+        color: #ff69b4;
+        font-size: 20px;
+        animation: fall 6s linear infinite;
+        opacity: 0.8;
+    }
+
+    @keyframes fall {
+        0% {
+            transform: translateY(-10px) translateX(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(100vh) translateX(100px);
+            opacity: 0;
+        }
+    }
+
+    footer {
+        margin-top: 30px;
+        font-size: 14px;
+        color: #ff87b7;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Happy New Year, Lê Anh Thư 🎀</h1>
+
+    <img class="kitty" src="https://i.postimg.cc/5tmktFSc/2109e3f7edf16c15b0de5915b057f345.jpg" alt="Hello Kitty">
+
+    <div class="message">
+        <p>
+            Gửi đến cô gái nhỏ <b>Thư</b> – người mà trong lòng anh luôn là điều dễ thương nhất trên đời 💕
+        </p>
+
+        <p>
+            Một năm mới lại đến rồi và anh chỉ mong rằng trong từng khoảnh khắc của năm nay,
+            em sẽ luôn mỉm cười thật nhiều, luôn được yêu thương, và luôn cảm thấy mình đặc biệt như chính cách em làm tim anh rung động.
+        </p>
+
+        <p>
+            đừng cọ khóc nữa nhen phải luôn cười cho tuiiii !,
+            tuy không còn là gì nhưng mà khang vẫn luôn dành 
+            từ những lời chúc ngọt ngào cho đến những quan tâm nhỏ bé nhất.
+        </p>
+
+        <p>
+            Chúc cho năm mới của em tràn đầy màu hồng,
+            đầy ắp yêu thương, thật nhiều niềm vui,
+            và mỗi ngày trôi qua đều nhẹ nhàng nhưng không kém phần đặc biệt 💗🌸
+        </p>
+
+        <p>
+            khang viết những lời này trong sự bình thản của mình. –  
+            khang hiểu rằng tình cảm lúc này của mình không còn đủ tư cách để chạm đến thư nữa 💞
+            và càng chẳng thể nào dùng 2 từ ' còn thương' để biện minh được 
+            💞 nên là chúc thư một năm mới an lành ạ 💞
+        </p>
+    </div>
+
+    <footer>
+        With all my love 💖 – Dành riêng cho Lê Anh Thư
+    </footer>
+</div>
+
+<script>
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💗";
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.fontSize = Math.random() * 20 + 15 + "px";
+    heart.style.animationDuration = Math.random() * 3 + 4 + "s";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 7000);
+}
+
+setInterval(createHeart, 400);
+</script>
+
+</body>
+</html>
